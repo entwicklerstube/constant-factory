@@ -1,4 +1,6 @@
 # Constant Factory
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/entwicklerstube/constant-factory.svg)](https://greenkeeper.io/)
 > Stop rewriting the constant name in each entry use a factory for this job
 
 [![Zero Dependencies](https://img.shields.io/badge/zero-dependencies-green.svg)]()
