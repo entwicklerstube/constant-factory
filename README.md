@@ -2,6 +2,9 @@
 > Stop rewriting the constant name in each entry use a factory for this job
 
 [![Zero Dependencies](https://img.shields.io/badge/zero-dependencies-green.svg)]()
+[![Coverage Status](https://coveralls.io/repos/github/entwicklerstube/constant-factory/badge.svg?branch=master)](https://coveralls.io/github/entwicklerstube/constant-factory?branch=master)
+[![Build Status](https://travis-ci.org/entwicklerstube/constant-factory.svg?branch=master)](https://travis-ci.org/entwicklerstube/constant-factory)
+[![devDependencies Status](https://david-dm.org/entwicklerstube/constant-factory/dev-status.svg)](https://david-dm.org/entwicklerstube/constant-factory?type=dev)
 
 ### Install
 **npm**
