@@ -13,7 +13,7 @@
     "test": "mocha test.js --require mocha --compilers js:babel-core/register",
     "standard": "standard --env mocha",
     "nyc": "nyc --require babel-core/register --require './mocha.js' mocha test.js",
-    "coverage": "yarn run nyc && nyc report --reporter=text-lcov | coveralls",
+    "coverage": "yarn run nyc && nyc report --reporter=text-lcov | coveralls"
   },
   "babel": {
     "presets": [
