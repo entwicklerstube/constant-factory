@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Stop rewriting the constant name in each entry use a factory for this job",
   "keywords": "constant, constant generator, react, redux, constant factory",
-  "main": "index.js",
+  "main": "build/index.js",
   "repository": "https://github.com/entwicklerstube/constant-factory",
   "author": "Michael J. Zoidl",
   "license": "MIT",
@@ -16,6 +16,9 @@
     "coverage": "yarn run nyc && nyc report --reporter=text-lcov | coveralls",
     "prepublish": "yarn run test && yarn run build"
   },
+  "files": [
+    "build"
+  ],
   "babel": {
     "presets": [
       "es2015"
