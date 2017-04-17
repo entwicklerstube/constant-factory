@@ -57,14 +57,14 @@ Advanced:
 ```js
 import c from 'constant-factory'
 
-export const { MY_CONSTANT, ANOTHER_CONSTANT } = c([
+export const { MY_CONSTANT, ANOTHER_CONSTANT } = c({
   'MY_CONSTANT': [
     'TODO', 'ISSUES'
   ],
   'ANOTHER_CONSTANT': [
     'DATES'
   ],
-])
+})
 
 // returns
 // {
