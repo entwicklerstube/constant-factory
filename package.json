@@ -1,6 +1,6 @@
 {
   "name": "constant-factory",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Stop rewriting the constant name in each entry use a factory for this job",
   "keywords": "constant, constant generator, react, redux, constant factory",
   "main": "build/index.js",
