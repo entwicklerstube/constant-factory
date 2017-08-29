@@ -58,9 +58,9 @@ describe('Constant-Factory', () => {
         SINGLE: 'SINGLE_ITEM',
         FOO: {
           BAR: 'FOO_BAR',
-          HELLO: [
-            'FOO_HELLO_WORLD'
-          ]
+          HELLO: {
+            WORLD: 'FOO_HELLO_WORLD'
+          }
         }
       })
     })
