@@ -43,4 +43,26 @@ describe('Constant-Factory', () => {
       })
     })
   })
+  
+  describe('Expert mode', () => {
+    it('returns a deeper object with arrays with sub-arrays', () => {
+      expect(c({
+        SINGLE: 'ITEM',
+        FOO: [
+          'BAR',
+          {'HELLO': [
+            'WORLD'
+          ]}
+        ]
+      })).to.deep.equal({
+        SINGLE: 'SINGLE_ITEM',
+        FOO: {
+          BAR: 'FOO_BAR',
+          HELLO: [
+            'FOO_HELLO_WORLD'
+          ]
+        }
+      })
+    })
+  })
 })

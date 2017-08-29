@@ -63,7 +63,7 @@ export const { MY_CONSTANT, ANOTHER_CONSTANT } = c({
   ],
   'ANOTHER_CONSTANT': [
     'DATES'
-  ],
+  ]
 })
 
 // returns
@@ -74,6 +74,35 @@ export const { MY_CONSTANT, ANOTHER_CONSTANT } = c({
 //   },
 //   ANOTHER_CONSTANT: {
 //     DATES: 'ANOTHER_CONSTANT_DATES'
+//   }
+// }
+```
+
+Expert:
+> Add additional subs in subs
+```js
+import c from 'constant-factory'
+
+export const { MY_CONSTANT, ANOTHER_CONSTANT } = c({
+  'MY_CONSTANT': [
+    'TODO',
+    {
+      'STATUS': [
+        'DONE',
+        'OPEN',
+      ]
+    }
+  ],
+})
+
+// returns
+// {
+//   MY_CONSTANT: {
+//     TODO: 'MY_CONSTANT_TODO',
+//     STATUS: [
+//       'MY_CONSTANT_STATUS_DONE',
+//       'MY_CONSTANT_STATUS_OPEN'
+//     ]
 //   }
 // }
 ```

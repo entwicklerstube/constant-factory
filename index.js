@@ -8,7 +8,21 @@ export default (constant, items = []) => {
   if (typeof constant === 'object') {
     Object.keys(constant).map(cons => {
       constantCollection[cons] = {}
-      constant[cons].map(i => (constantCollection[cons][i] = `${cons}_${i}`))
+      
+      if (typeof constant[cons] !== 'string') {
+        constant[cons].map(i => {
+          if (typeof i === 'string') {
+            return constantCollection[cons][i] = `${cons}_${i}`
+          } else if (typeof i === 'object') {
+            return constantCollection[cons][Object.keys(i)[0]] = i[Object.keys(i)[0]].map(val => {
+              return `${cons}_${Object.keys(i)[0]}_${val}`
+            })
+          }
+        })
+
+      } else if (typeof constant[cons] === 'string') {
+        return constantCollection[cons] = `${cons}_${constant[cons]}`
+      }
     })
   }
 
