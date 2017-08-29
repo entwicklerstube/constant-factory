@@ -98,10 +98,10 @@ export const { MY_CONSTANT, ANOTHER_CONSTANT } = c({
 // {
 //   MY_CONSTANT: {
 //     TODO: 'MY_CONSTANT_TODO',
-//     STATUS: [
-//       'MY_CONSTANT_STATUS_DONE',
-//       'MY_CONSTANT_STATUS_OPEN'
-//     ]
+//     STATUS: {
+//       DONE: 'MY_CONSTANT_STATUS_DONE',
+//       OPEN: 'MY_CONSTANT_STATUS_OPEN'
+//     }
 //   }
 // }
 ```
